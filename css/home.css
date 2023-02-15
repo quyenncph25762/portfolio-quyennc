@@ -71,18 +71,14 @@ header {
 
 .header_logo {
     font-family: 'Poppins';
-    /* text-align: center; */
     font-weight: 600;
     font-size: 32px;
     text-decoration: none;
     font-weight: 700;
-    /* color: #000; */
     cursor: pointer;
-    /* margin-left: -10px; */
     letter-spacing: 3px;
     color: var(--color-main);
     position: relative;
-    /* display: inline-block; */
 }
 
 .header_logo::before {
@@ -136,21 +132,16 @@ header .header_contact {
     color: var(--color-orange);
 }
 
-/* main homePage*/
 .homePage_main {
     height: 90vh;
     position: relative;
-    /* margin-top: 90px; */
-    /* margin-bottom: 100px; */
 }
 
 .container {}
 
 .homePage {
     height: 100%;
-    /* position: relative; */
-    /* filter: blur(8px); */
-    /* z-index: -1000; */
+
 }
 
 
@@ -164,7 +155,6 @@ header .header_contact {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
 }
 
@@ -188,8 +178,7 @@ header .header_contact {
 
 .homePage_row_left-intro p {
     margin-left: 10px;
-    /* color: var(--color-orange); */
-    /* opacity: 0.6; */
+
     color: var(--color-title);
     background: -webkit-linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
     ;
@@ -201,7 +190,6 @@ header .header_contact {
     font-family: 'Poppins';
     font-size: 14px;
     color: var(--color-main);
-    /* flex: 1; */
 }
 
 .homePage_row_left-bottom {
@@ -215,28 +203,20 @@ header .header_contact {
     background: transparent;
     padding: 2px 12px;
     margin: 24px 0 0 0;
-    /* box-shadow: 0 0 6px; */
     border: 3px solid #FF4820;
     font-size: 24px;
     transition: .1s ease-in-out;
     background-color: #FF4820;
-    /* text-transform: uppercase; */
 }
 
 .homePage_btn:hover {
-    /* background: rgb(244, 244, 252); */
-    /* background: transparent; */
-    /* background-color: transparent; */
-    /* background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%); */
     background-color: transparent;
     border-color: #fff;
 }
 
 
 .homePage_btn:hover a {
-    /* color: red; */
-    /* color: var(--color-main); */
-    /* color: #FF4820; */
+
     color: #fff;
 }
 
@@ -266,7 +246,6 @@ header .header_contact {
     right: 50%;
     transform: translateX(-50%);
     top: 20px;
-    /* animation: circle 3s linear infinite; */
     z-index: -100;
 }
 

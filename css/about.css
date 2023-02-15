@@ -1,11 +1,8 @@
 #about {
-    /* background-color: rgb(244, 244, 252); */
     padding: 7.6rem 0 4.6rem 0;
     position: relative;
     z-index: 100;
     margin-top: 90px;
-    /* backdrop-filter: blur(8px); */
-    /* margin-top: 4.6rem; */
 }
 
 .container {}
@@ -37,7 +34,6 @@
     position: absolute;
     top: -40px;
     right: -40px;
-    /* border: 8px solid #ccc; */
 }
 
 .about_row-right {
@@ -50,7 +46,6 @@
     font-weight: 700;
     position: relative;
     padding: 5px 0;
-    /* padding: 0 0 20px 0; */
     background-color: #FF4820;
     width: 250px;
     display: flex;
@@ -59,15 +54,7 @@
     color: #fff;
 }
 
-/* 
-.about_top::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    bottom: 0;
-    left: 0;
-    border-bottom: 4px solid var(--color-yellow);
-} */
+
 
 .about_body {
     color: var(--color-main);
@@ -77,37 +64,6 @@
     width: 600px;
     font-weight: 600;
 }
-
-/* .about_button {
-    display: flex;
-
-}
-
-.about-btn {
-    padding: 5px 24px;
-    background-color: var(--color-yellow);
-    transition: .25s ease-in-out;
-    margin-left: 12px;
-}
-
-.about-btn>a {
-    text-decoration: none;
-    font-family: 'Poppins';
-    color: #fff;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-btn:hover {
-    background-color: transparent;
-    border-color: var(--color-yellow);
-}
-
-.about-btn:hover a {
-    color: var(--color-yellow);
-} */
 
 .about_footer-title {
     font-family: 'Poppins';
@@ -140,7 +96,6 @@
 .about_footer-icon ion-icon {
     color: var(--color-yellow);
     font-size: 18px;
-    /* font-weight: 700; */
 }
 
 .circle-l-about {
