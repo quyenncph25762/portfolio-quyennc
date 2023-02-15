@@ -5,6 +5,7 @@ import contact from "./contact"
 import footer from "./footer"
 import project from "./project"
 import skills from "./skills"
+// import classes from "../css/home.module.css";
 
 const home = () => {
   return `
