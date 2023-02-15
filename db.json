@@ -1,12 +1,16 @@
 {
   "projects": [
     {
-      "name": "Dự án 1000",
-      "id": 1
+      "id": 1,
+      "name": "Dự án mẫu 123"
     },
     {
-      "name": "Dự án mẫu 100ab",
+      "name": "Dự án mẫu 100",
       "id": 2
+    },
+    {
+      "name": "Quyền đẹp trai",
+      "id": 3
     }
   ]
 }

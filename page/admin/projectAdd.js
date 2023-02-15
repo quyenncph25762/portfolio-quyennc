@@ -1,4 +1,6 @@
+import axios from "axios";
 import { router, useEffect } from "../../lib"
+import { addProjects } from "./config/projects";
 
 const projectAdd = () => {
     useEffect(() => {
@@ -7,7 +9,9 @@ const projectAdd = () => {
         form.addEventListener("submit", (e) => {
             e.preventDefault();
             const newProject = { name: formName.value }
-            fetch("http://localhost:3000/projects", { method: "POST", headers: { "Content-Type": "Application/json" }, body: JSON.stringify(newProject) }).then(() => router.navigate("/admin/projectAdmin"))
+            addProjects(newProject).then(() => router.navigate("/admin/projectAdmin"))
+            // axios.post("http://localhost:3000/projects", newProject).then(() => router.navigate("/admin/projectAdmin"))
+            // fetch("http://localhost:3000/projects", { method: "POST", headers: { "Content-Type": "Application/json" }, body: JSON.stringify(newProject) }).then(() => router.navigate("/admin/projectAdmin"))
         })
     })
     return `

@@ -1,10 +1,20 @@
 const menus = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Projects", path: "/projects" },
-    { name: "Posts", path: "/posts" },
-    { name: "Contact", path: "/contact" },
+    { name: "Home", path: "#" },
+    { name: "About", path: "#about" },
+    { name: "Skills", path: "#skill" },
+    { name: "project", path: "#project" },
+    { name: "Contact", path: "#contact" },
+    // { name: "Posts", path: "/posts" },
+    // { name: "ADMIN", path: "/admin/projectAdmin" },
 ];
+// const menus = [
+//     { name: "Home", path: "/" },
+//     { name: "About", path: "/about" },
+//     { name: "project", path: "/project" },
+//     // { name: "Posts", path: "/posts" },
+//     { name: "Contact", path: "/contact" },
+//     // { name: "ADMIN", path: "/admin/projectAdmin" },
+// ];
 
 const projects = [
     {

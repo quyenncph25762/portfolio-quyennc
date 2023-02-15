@@ -1,22 +1,28 @@
 import { useEffect, useState } from "../../lib"
+import axios from "axios";
+import { deleteProjects, getProjects } from "./config/projects";
 const projectAdmin = () => {
-    const [projects, setProjects] = useState([]);
-    useEffect(() => {
-        fetch("http://localhost:3000/projects")
-            .then((response) => response.json())
-            .then((data) => setProjects(data))
-    }, [])
-    useEffect(() => {
-        const btns = document.querySelectorAll(".btn");
-        btns.forEach((btn) => {
-            btn.addEventListener("click", () => {
-                const id = btn.dataset.id;
-                fetch(`http://localhost:3000/projects/${id}`, { method: "DELETE" })
-                    .then(() => { const newProjects = projects.filter((project) => project.id != id); setProjects(newProjects) })
-            })
-        })
-    })
-    return `
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    // axios.get("http://localhost:3000/projects").then(({ data }) => setProjects(data))
+    getProjects().then(({ data }) => setProjects(data))
+  }, [])
+  useEffect(() => {
+    const btns = document.querySelectorAll(".btn");
+    for (const btn of btns) {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.id;
+        deleteProjects(id).then(() => { const newProject = projects.filter((project) => project.id != id); setProjects(newProject) })
+        // axios.delete(`http://localhost:3000/projects/${id}`).then(() => {
+        //   const newProject = projects.filter((project) => project.id != id);
+        //   setProjects(newProject);
+        // })
+        // fetch(`http://localhost:3000/projects/${id}`, { method: "DELETE" })
+        //   .then(() => { const newProjects = projects.filter((project) => project.id != id); setProjects(newProjects) })
+      })
+    }
+  })
+  return `
     <table class="table table-light container">
       <thead class="thead-light">
         <tr>

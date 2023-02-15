@@ -1,0 +1,52 @@
+.container {}
+
+#footer {
+    background-color: rgb(244, 244, 252);
+    text-align: center;
+    margin-top: 40px;
+    padding: 24px 0 0 0;
+}
+
+.header_logo {}
+
+.footer_logo {
+    color: var(--color-main);
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.footer_logo::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 100rem;
+    background-color: var(--color-orange);
+    position: absolute;
+    bottom: 0;
+    z-index: -2;
+    left: 54%;
+}
+
+.footer_title {
+    color: var(--color-main);
+}
+
+.footer_author {
+    margin-bottom: 0;
+}
+
+.footer_author a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-main);
+    transition: .25s linear;
+}
+
+.footer_author a:hover {
+    color: var(--color-orange);
+}
+
+.header_contact {
+    /* margin: 12px 0; */
+}
