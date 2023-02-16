@@ -64,6 +64,7 @@ header {
     /* position: relative; */
 }
 
+
 .header_row {
     display: flex;
     align-items: center;
@@ -154,8 +155,11 @@ header .header_contact {
 .homePage_row_left {
     height: 100%;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
+    left: 0;
+    animation: homePageLeft 1s ease-in-out;
 }
 
 .homePage_row_left-top {
@@ -216,13 +220,13 @@ header .header_contact {
 
 
 .homePage_btn:hover a {
-
     color: #fff;
 }
 
 
 .homePage_btn a {
     color: #fff;
+    font-family: 'Poppins';
     text-decoration: none;
 }
 
@@ -235,6 +239,8 @@ header .header_contact {
     z-index: -100;
     bottom: 0;
     left: -200px;
+    /* opacity: 0; */
+    /* animation: circle 1s ease-in-out; */
 }
 
 .circle-s-home {
@@ -247,38 +253,34 @@ header .header_contact {
     transform: translateX(-50%);
     top: 20px;
     z-index: -100;
+    /* opacity: 0; */
+    animation: circle 2s ease-in-out;
 }
 
-@keyframes circle {
-    0% {
-        right: 50%;
-    }
 
-    50% {
-        right: 51%;
-    }
-
-    100% {
-        right: 50%;
-    }
-}
 
 .homePage_row_right {
     position: relative;
+    right: 0;
+    /* top: 0; */
+    /* right: -30%; */
+    animation: homePageRight 1s;
 }
 
 .homePage_row_right-img {
     width: 400px;
+    transform: translateX(-50%);
     height: 500px;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
     position: absolute;
+    /* right: -30%; */
 }
 
 .img_homePage {
     width: 100%;
     height: 100%;
+    /* right: -30%; */
 }
 
 .homePage_row_right-splash {
@@ -288,4 +290,48 @@ header .header_contact {
     bottom: 0;
     right: -30px;
     z-index: -100;
+}
+
+
+@keyframes homePageRight {
+    0% {
+        opacity: 0;
+        /* right: -100%; */
+    }
+
+    100% {
+        opacity: 1;
+        /* right: 0; */
+    }
+}
+
+@keyframes homePageLeft {
+    0% {
+        opacity: 0;
+        left: -100%;
+    }
+
+    100% {
+        opacity: 1;
+        /* right: 0; */
+    }
+}
+
+@keyframes circle {
+    0% {
+        top: -100%;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    75% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

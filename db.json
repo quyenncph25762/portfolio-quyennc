@@ -2,15 +2,63 @@
   "projects": [
     {
       "id": 1,
-      "name": "Dự án mẫu 123"
+      "name": "Dự án mẫu 123",
+      "categoryId": 1,
+      "description": "hello"
     },
     {
       "name": "Dự án mẫu 100",
-      "id": 2
+      "id": 2,
+      "categoryId": 1,
+      "description": "lohe"
+    },
+    {
+      "id": 4,
+      "name": "the zed",
+      "categoryId": "4",
+      "description": "Khó khăn nhiều quá"
+    },
+    {
+      "name": "Dự án mẫu 100",
+      "categoryId": "1",
+      "description": "đẹp trai nhất thế giới",
+      "id": 5
+    },
+    {
+      "name": "Dự án 1",
+      "categoryId": "4",
+      "description": "Nhóm có 5 người làm khoảng 2 tháng rưỡi xong",
+      "id": 6
     },
     {
       "name": "Quyền đẹp trai",
-      "id": 3
+      "categoryId": "1",
+      "description": "qqqq",
+      "id": 7
+    },
+    {
+      "name": "Dự án mẫu 1231",
+      "categoryId": "4",
+      "description": "QUYENNE",
+      "id": 8
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "HTML"
+    },
+    {
+      "id": 2,
+      "name": "CSS"
+    },
+    {
+      "id": 3,
+      "name": "PHP"
+    },
+    {
+      "id": 4,
+      "name": "JavaScript"
     }
   ]
 }

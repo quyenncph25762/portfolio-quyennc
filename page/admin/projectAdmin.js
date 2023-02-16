@@ -8,17 +8,11 @@ const projectAdmin = () => {
     getProjects().then(({ data }) => setProjects(data))
   }, [])
   useEffect(() => {
-    const btns = document.querySelectorAll(".btn");
+    const btns = document.querySelectorAll(".btn-danger");
     for (const btn of btns) {
       btn.addEventListener("click", () => {
         const id = btn.dataset.id;
         deleteProjects(id).then(() => { const newProject = projects.filter((project) => project.id != id); setProjects(newProject) })
-        // axios.delete(`http://localhost:3000/projects/${id}`).then(() => {
-        //   const newProject = projects.filter((project) => project.id != id);
-        //   setProjects(newProject);
-        // })
-        // fetch(`http://localhost:3000/projects/${id}`, { method: "DELETE" })
-        //   .then(() => { const newProjects = projects.filter((project) => project.id != id); setProjects(newProjects) })
       })
     }
   })
@@ -28,6 +22,8 @@ const projectAdmin = () => {
         <tr>
           <th>#</th>
           <th>Name</th>
+          <th>category</th>
+          <th>description</th>
           <th colspan="2" width="75px"><button class="btn btn-success"><a href="/admin/projectAdmin/add">ADD</a></button></th>
         </tr>
       </thead>
@@ -36,6 +32,8 @@ const projectAdmin = () => {
         <tr>
             <td>${index + 1}</td>
             <td>${project.name}</td>
+            <td>${project.categoryId}</td>
+            <td>${project.description}</td>
             <td width="75px"><button class="btn btn-danger" data-id="${project.id}">remove</button></td>
             <td width="75px"><button class="btn btn-warning"><a href="/admin/projectAdmin/${project.id}/edit">EDIT</a></button></td>
         </tr>
