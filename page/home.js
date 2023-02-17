@@ -12,8 +12,8 @@ const home = () => {
   ${header()}
   <main class="container homePage_main">
     <div class="homePage">
-    <div class="circle-l-home"></div>
-    <div class="circle-s-home"></div>
+      <div class="circle-l-home"></div>
+      <div class="circle-s-home"></div>
       <div class="row homePage_row">
         <div class="col-lg-6 homePage_row_left">
           <p class="homePage_row_left-top" id="intro_name">Xin chào!  tôi là Công Quyền</p>
