@@ -1,42 +1,49 @@
 {
   "projects": [
     {
-      "name": "Quyền đẹp trai thế",
-      "categoryId": "2",
-      "date": "2022-10-20",
-      "description": "Du an mau\n\n",
+      "name": "Dự án mẫu",
+      "categoryId": "3",
+      "date": "2022-12-11",
+      "description": "Nhóm 3 người làm được thực hiện bởi sinh viên FPOLY",
       "id": 1
     },
     {
-      "id": 2,
-      "name": "Du an 1",
-      "categoryId": "4",
-      "date": "2002-10-16",
-      "description": "The zed VN\n"
+      "name": "Dự án 1",
+      "categoryId": "3",
+      "date": "2023-09-01",
+      "description": "Nhóm 5 người được thực hiện bởi sinh viên FPOLY",
+      "id": 2
     },
     {
-      "name": "Quyen oi",
-      "categoryId": "2",
-      "date": "2003-10-16",
-      "description": "Khong biet nua",
+      "name": "the zed",
+      "categoryId": "4",
+      "date": "2023-12-02",
+      "description": "Code thuần JS",
       "id": 3
+    },
+    {
+      "name": "The band",
+      "categoryId": "1",
+      "date": "2023-01-10",
+      "description": "Code cua f8",
+      "id": 4
     }
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "HTML"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "CSS"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "PHP"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "JavaScript"
     }
   ]
