@@ -17,7 +17,7 @@ const projectAdmin = () => {
     }
   })
   return `
-    <table class="table table-light container">
+    <table class="table table-light container" style="box-shadow: 0 0 10px #ccc;border-radius:10px;overflow:hidden">
       <thead class="thead-light">
         <tr>
           <th>#</th>
