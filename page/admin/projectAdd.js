@@ -12,12 +12,14 @@ const projectAdd = () => {
         const form = document.querySelector(".form-group");
         const formName = document.querySelector("#form-name");
         const formCate = document.querySelector("#my-select");
+        const formDate = document.querySelector(".form-date");
         const dsc = document.querySelector(".dsc");
         form.addEventListener("submit", (e) => {
             e.preventDefault();
             const newProject = {
                 name: formName.value,
                 categoryId: formCate.value,
+                date: formDate.value,
                 description: dsc.value,
             }
             addProjects(newProject).then(() => router.navigate("/admin/projectAdmin"))
@@ -36,6 +38,8 @@ const projectAdd = () => {
             `).join("")}
         </select>
         </div>
+        <div style="color:#fff;">Ngay tao:</div>   
+        <input type="date" class="form-date">
         <div style="color:#fff;">mo ta:</div>   
         <textarea name="" id="dsc" cols="30" rows="10" class="dsc"></textarea>      
         <button class="btn btn-success">ADD</button>

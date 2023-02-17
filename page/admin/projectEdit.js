@@ -16,10 +16,11 @@ const projectEdit = ({ id }) => {
         const form = document.querySelector(".form-group");
         const formName = document.querySelector("#form-name");
         const formCate = document.querySelector("#my-select");
+        const formDate = document.querySelector(".form-date");
         const dsc = document.querySelector(".dsc");
         form.addEventListener("submit", (e) => {
             e.preventDefault();
-            const newProject = { id, name: formName.value, categoryId: formCate.value, description: dsc.value }
+            const newProject = { id, name: formName.value, categoryId: formCate.value, date: formDate.value, description: dsc.value }
             editProjects(newProject).then(() => router.navigate("/admin/projectAdmin"))
         })
     })
@@ -34,6 +35,8 @@ const projectEdit = ({ id }) => {
             <option value="${item.id}" ${item.id == projects.categoryId ? 'selected' : ''}>${item.name}</option>
         `)}
         </select>
+        <div style="color:#fff;">Ngay tao:</div>   
+        <input type="date" class="form-date" value="${projects.date}">
         <div style="color:#fff;">mo ta:</div>   
         <textarea name="" id="dsc" cols="30" rows="10" class="dsc">${projects.description}</textarea>      
         <button class="btn btn-success">UPDATE</button>

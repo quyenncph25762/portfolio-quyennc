@@ -1,46 +1,25 @@
 {
   "projects": [
     {
-      "id": 1,
-      "name": "Dự án mẫu 123",
-      "categoryId": 1,
-      "description": "hello"
+      "name": "Quyền đẹp trai thế",
+      "categoryId": "2",
+      "date": "2022-10-20",
+      "description": "Du an mau\n\n",
+      "id": 1
     },
     {
-      "name": "Dự án mẫu 100",
       "id": 2,
-      "categoryId": 1,
-      "description": "lohe"
-    },
-    {
-      "id": 4,
-      "name": "the zed",
+      "name": "Du an 1",
       "categoryId": "4",
-      "description": "Khó khăn nhiều quá"
+      "date": "2002-10-16",
+      "description": "The zed VN\n"
     },
     {
-      "name": "Dự án mẫu 100",
-      "categoryId": "1",
-      "description": "đẹp trai nhất thế giới",
-      "id": 5
-    },
-    {
-      "name": "Dự án 1",
-      "categoryId": "4",
-      "description": "Nhóm có 5 người làm khoảng 2 tháng rưỡi xong",
-      "id": 6
-    },
-    {
-      "name": "Quyền đẹp trai",
-      "categoryId": "1",
-      "description": "qqqq",
-      "id": 7
-    },
-    {
-      "name": "Dự án mẫu 1231",
-      "categoryId": "4",
-      "description": "QUYENNE",
-      "id": 8
+      "name": "Quyen oi",
+      "categoryId": "2",
+      "date": "2003-10-16",
+      "description": "Khong biet nua",
+      "id": 3
     }
   ],
   "categories": [

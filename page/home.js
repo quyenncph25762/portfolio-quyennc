@@ -26,9 +26,9 @@ const home = () => {
         </div>
         <div class="col-lg-6 homePage_row_right">
         <div class="homePage_row_right-img">
-        ${projectGalleryAvt({ img: "../images/imgHome/meo-removebg-preview.png" })}
+        ${projectGalleryAvt({ img: "https://scontent.fhan2-5.fna.fbcdn.net/v/t1.15752-9/330936436_718333636500243_2251567244537455205_n.png?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=h1koeivAw6gAX978VKu&tn=GoGhDz-qmistrldY&_nc_ht=scontent.fhan2-5.fna&oh=03_AdQsuc1kHa-a3PAvih9YVPeAJXRYzYG8lA7Z-GOOg4QMaQ&oe=6416B71C" })}
         </div>
-        ${projectGallerySplash({ img: "../images/imgHome/splash_red.png" })}
+        ${projectGallerySplash({ img: "https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/331143122_714833346945511_1829775671821451125_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=PKbohnEQdf0AX84Zhuo&_nc_ht=scontent.fhan2-4.fna&oh=03_AdQN2ysS_m40B5E3aeF7sonvXKUkI1qBQ5NbNTHX4jCczw&oe=6416D3BA" })}
         </div>
       </div>
     </div>

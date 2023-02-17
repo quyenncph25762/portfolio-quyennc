@@ -6,17 +6,28 @@ import { getProjects } from "./admin/config/projects";
 
 const project = () => {
   const [categories, setCategories] = useState([]);
-  const [cate, setCate] = useState({});
   const [projects, setProjects] = useState([]);
+  // const [projectInCategory, setProjectInCategory] = useState([]);
+  // const [id, setId] = useState(null);
   useEffect(() => {
     getCategories().then(({ data }) => setCategories(data))
   }, [])
   useEffect(() => {
     getProjects().then(({ data }) => setProjects(data));
   }, [])
-  useEffect(() => {
-    fetch("http://localhost:3000/categories")
-  }, [])
+  // useEffect(() => {
+
+  // }, [id])
+  // const onHandleClick = async (id) => {
+  //   if (id != 0) {
+
+  //     const data = await (await fetch(`http://localhost:3000/categories/${id}?_embed=projects`)).json();
+  //     console.log(data)
+  //     setProjectInCategory(data.projects)
+  //   } else {
+  //     getProjects().then(({ data }) => { setProjectInCategory(data) })
+  //   }
+  // }
   return `
     <div id="project">
     <div class="circle-s-project"></div>
@@ -36,7 +47,7 @@ const project = () => {
           <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/09/how-to-design-a-website-21-1024x500.png" alt="" class="cart_photo">
         </div>
         <div class="cart_nav">
-          <h1 class="cart_nav-title">${project.name}</h1>
+          <h1 class="cart_nav-title">${project.name}<span>${project.date}</span></h1>
           <div class="cart_nav-languagues">
           ${categories.map((category) => `
             ${project.categoryId == category.id ? `<span>${category.name}</span>` : ''}

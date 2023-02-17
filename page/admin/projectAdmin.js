@@ -23,6 +23,7 @@ const projectAdmin = () => {
           <th>#</th>
           <th>Name</th>
           <th>category</th>
+          <th>Date</th>
           <th>description</th>
           <th colspan="2" width="75px"><button class="btn btn-success"><a href="/admin/projectAdmin/add">ADD</a></button></th>
         </tr>
@@ -33,6 +34,7 @@ const projectAdmin = () => {
             <td>${index + 1}</td>
             <td>${project.name}</td>
             <td>${project.categoryId}</td>
+            <td>${project.date}</td>
             <td>${project.description}</td>
             <td width="75px"><button class="btn btn-danger" data-id="${project.id}">remove</button></td>
             <td width="75px"><button class="btn btn-warning"><a href="/admin/projectAdmin/${project.id}/edit">EDIT</a></button></td>

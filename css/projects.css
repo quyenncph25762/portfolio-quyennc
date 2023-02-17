@@ -121,6 +121,13 @@
     flex-shrink: 0;
 }
 
+.cart_nav-title span {
+    font-size: 12px;
+    display: block;
+    color: #042c54;
+    opacity: 0.4;
+}
+
 .cart_nav-languagues {
     /* padding: 10px 0; */
     margin-bottom: 10px;
