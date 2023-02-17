@@ -23,7 +23,6 @@ const project = () => {
     if (id != 0) {
 
       const data = await (await fetch(`http://localhost:3000/categories/${id}?_embed=projects`)).json();
-      console.log(data)
       setProjectInCategory(data)
     } else {
       getProjects().then(({ data }) => { setProjectInCategory(data) })
