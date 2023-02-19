@@ -2,20 +2,102 @@
   "projects": [
     {
       "id": 1,
-      "name": "The zed ",
-      "url": "https://thezed.vn/",
+      "name": "The zed",
+      "url": "https://github.com/quyenncph25762/duan1.git",
+      "urlWeb": "https://thezed.vn/",
       "galleryProjects": [
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676790842/ASS_ECMA/gvatgnszxeradp5dsuj4.jpg",
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676790842/ASS_ECMA/uocqwjyyxo1lvm9htxke.jpg",
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676790843/ASS_ECMA/vj09vxgao0umrqz5ipwt.jpg",
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676790843/ASS_ECMA/o5ixablbrvx00sfdqthx.jpg"
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676803892/ASS_ECMA/g5sdfn01rxn93ayzrk0a.jpg",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676803893/ASS_ECMA/gtmssxzmht2libru9lbu.webp"
       ],
       "gallery": [
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676788377/ASS_ECMA/lbtash2mdce8xfxqtbnf.jpg"
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676803892/ASS_ECMA/pefuhaogipnkudxzh7lp.jpg"
       ],
-      "categoryId": "3",
-      "date": "2032-12-10",
-      "description": "The zed vn"
+      "categoryId": 3,
+      "date": "2003-10-16",
+      "author": "quyennc",
+      "description": "Javascript"
+    },
+    {
+      "id": 2,
+      "name": "The band",
+      "url": "https://www.w3schools.com/w3css/tryw3css_templates_band.htm",
+      "urlWeb": "https://www.w3schools.com/w3css/tryw3css_templates_band.htm",
+      "galleryProjects": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676804081/ASS_ECMA/kki6cnfuscfjvuzhouow.jpg",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676804081/ASS_ECMA/igl5lci13rzirwfkml8b.jpg",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676804082/ASS_ECMA/ywctflfi1ynjdehk06qv.jpg"
+      ],
+      "gallery": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676804080/ASS_ECMA/cgvgaqurwkmy33zdvm3b.jpg"
+      ],
+      "categoryId": 3,
+      "date": "2002-10-02",
+      "description": "The band la nhom nhạc của tôi biểu diễn trên thế giới"
+    },
+    {
+      "name": "Quyen dep trai nhat vu tru",
+      "url": "https://www.facebook.com/quyen.nguyencong.1610203",
+      "gallery": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676804146/ASS_ECMA/avdsv6hziwq7ci4ofnei.jpg"
+      ],
+      "galleryProjects": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676804147/ASS_ECMA/k07nuq9zg98nakhjycr7.jpg",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676804148/ASS_ECMA/b3vug8imrd1hepi3lsuy.jpg"
+      ],
+      "categoryId": 2,
+      "date": "2003-10-16",
+      "description": "Đây là ảnh của người làm ra ass ECMA này",
+      "id": 3
+    },
+    {
+      "name": "Halloween",
+      "url": "https://en.wikipedia.org/wiki/Halloween",
+      "gallery": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676804332/ASS_ECMA/pmb0yt9ykuommn9tffeq.webp"
+      ],
+      "galleryProjects": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676804333/ASS_ECMA/isc3uw1ewgcybpheqhh8.jpg",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676804334/ASS_ECMA/znl9gqsyikynsfwgn4yq.jpg"
+      ],
+      "categoryId": 1,
+      "date": "2003-10-22",
+      "description": "Halloween đẹp hơn giáng sinh nhiều",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "name": "Công Nghệ AI",
+      "url": "https://www.fairtrials.org/predictive-policing/?gclid=Cj0KCQiArsefBhCbARIsAP98hXQTLSopv6SCtu97e6XwyEHNhYMoBx2a4VZERmZzRfz56cYeUPpodNsaAn1pEALw_wcB",
+      "urlWeb": "",
+      "galleryProjects": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676818804/ASS_ECMA/wnjxyvgtff5k3qbhbfyw.jpg",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676818806/ASS_ECMA/dwaarnlj76kavgjvudzj.jpg",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676818807/ASS_ECMA/ww2cgxd2b2iijzxijhhb.jpg"
+      ],
+      "gallery": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676818803/ASS_ECMA/ezr4cdx87czbipkzjzly.jpg"
+      ],
+      "categoryId": 4,
+      "date": "2023-02-19",
+      "author": "quyenncph25762",
+      "description": "Công nghệ AI đang dần bùng nổ , liệu năm 2023 có sự đột phá nào ??"
+    },
+    {
+      "id": 6,
+      "name": "Shadow garden",
+      "url": "",
+      "urlWeb": "http://animevietsub.pro/phim/kage-no-jitsuryokusha-ni-naritakute-a4699/",
+      "galleryProjects": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676821419/ASS_ECMA/p6zkhwfcoe3ubnpcz7th.jpg",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676821420/ASS_ECMA/l4hloz8lysnoumcbnrrz.jpg"
+      ],
+      "gallery": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676821418/ASS_ECMA/mwxabldguzob4idwpfif.jpg"
+      ],
+      "categoryId": 3,
+      "date": "2022-10-16",
+      "author": "Nguyen Cong Quyen",
+      "description": "Như bao người ngưỡng mộ những anh hùng khi còn nhỏ, nhân vật chính của chúng ta lại ngưỡng mộ những con người trong bóng tối."
     }
   ],
   "categories": [

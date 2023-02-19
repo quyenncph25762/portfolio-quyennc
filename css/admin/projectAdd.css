@@ -1,0 +1,58 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+#project-form {
+    /* display: flex; */
+
+}
+
+.form-group {}
+
+.container {}
+
+.form-control {
+    /* width: 50% !important; */
+}
+
+/* .projectadd_right {
+    float: right;
+}
+
+.projectadd_right input {
+    width: 50%;
+} */
+
+.form-img {}
+
+.form-imgs {}
+
+.btn-group-toggle {}
+
+.form-date {}
+
+.dsc {}
+
+.btn {}
+
+.btn-success {}

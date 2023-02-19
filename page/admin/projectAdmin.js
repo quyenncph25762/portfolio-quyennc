@@ -30,6 +30,7 @@ const projectAdmin = () => {
           <th>Image</th>
           <th>category</th>
           <th>Date</th>
+          <th>Author</th>
           <th>description</th>
           <th colspan="2" width="75px"><button class="btn btn-success"><a href="/admin/projectAdmin/add">ADD</a></button></th>
         </tr>
@@ -38,17 +39,19 @@ const projectAdmin = () => {
       ${projects.map((project, index) => `
         <tr>
             <td>${index + 1}</td>
-            <td>${project.name}</td>
+            <td>${project.name ? project.name : '...'}</td>
             <td><img src="${project.gallery}" height="75px" style="border:1px solid #ccc;" width="75px"></td>
             <td>${project.categoryId}</td>
             <td>${project.date}</td>
+            <td>${project.author ? project.author : '...'}</td>
             <td>${project.description}</td>
             <td width="75px"><button class="btn btn-danger" data-id="${project.id}">remove</button></td>
             <td width="75px"><button class="btn btn-warning"><a href="/admin/projectAdmin/${project.id}/edit">EDIT</a></button></td>
         </tr>
-      `)}
-      </tbody>
-    </table>
+      `)
+    }
+      </tbody >
+    </table >
   `
 }
 

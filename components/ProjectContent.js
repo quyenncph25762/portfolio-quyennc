@@ -3,7 +3,7 @@ const ProjectContent = ({ projectInCategory, projects, categories }) => {
     ${projectInCategory.projects ? `
       ${projectInCategory.projects.map((project) => `
       <div class="cart">
-      <a href="${project.url}" style="text-decoration: none;color: var(--color-main);
+      <a href="/project/${project.id}" style="text-decoration: none;color: var(--color-main);
       font-family: 'Poppins';
       ">
       <div class="cart_img">
@@ -18,8 +18,8 @@ const ProjectContent = ({ projectInCategory, projects, categories }) => {
       </div>
       <div class="cart_nav-dsc">${project.description}</div>
       <div class="cart_nav-button">
-        <button class="cart_btn"><a class="cart_nav-btn">Visit source</a></button>
-        <button class="cart_btn"><a class="cart_nav-btn">Visit website</a></button>
+        <button class="cart_btn"><a href="${project.url}" class="cart_nav-btn">Visit source</a></button>
+        <button class="cart_btn"><a href="${project.urlWeb}" class="cart_nav-btn">Visit website</a></button>
       </div>
     </div>
       <a/>
@@ -30,7 +30,7 @@ const ProjectContent = ({ projectInCategory, projects, categories }) => {
       : `
       ${projects.map((project) => `
       <div class="cart">
-      <a href="${project.url}" style="text-decoration: none;color: var(--color-main);
+      <a href="/project/${project.id}" style="text-decoration: none;color: var(--color-main);
       font-family: 'Poppins';
       ">
         <div class="cart_img">
@@ -45,8 +45,8 @@ const ProjectContent = ({ projectInCategory, projects, categories }) => {
           </div>
           <div class="cart_nav-dsc">${project.description}</div>
           <div class="cart_nav-button">
-            <button class="cart_btn"><a class="cart_nav-btn">Visit source</a></button>
-            <button class="cart_btn"><a class="cart_nav-btn">Visit website</a></button>
+            <button class="cart_btn"><a class="cart_nav-btn" href="${project.url}">Visit source</a></button>
+            <button class="cart_btn"><a class="cart_nav-btn" href="${project.urlWeb}">Visit website</a></button>
           </div>
         </div>
         </a>  

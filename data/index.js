@@ -4,8 +4,6 @@ const menus = [
     { name: "Skills", path: "#skill" },
     { name: "project", path: "#project" },
     { name: "Contact", path: "#contact" },
-    // { name: "Posts", path: "/posts" },
-    // { name: "ADMIN", path: "/admin/projectAdmin" },
 ];
 // const menus = [
 //     { name: "Home", path: "/" },

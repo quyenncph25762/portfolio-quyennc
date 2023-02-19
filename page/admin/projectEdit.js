@@ -15,13 +15,15 @@ const projectEdit = ({ id }) => {
     useEffect(() => {
         const form = document.querySelector(".form-group");
         const formName = document.querySelector("#form-name");
-        const formUrl = document.querySelector("#form-url");
+        const formUrlSource = document.querySelector("#form-url-source");
+        const formUrlWebsite = document.querySelector("#form-url-website");
         // console.log(formUrl);
         const formImg = document.querySelector(".form-img");
         const formImgs = document.querySelector(".form-imgs");
         // console.log(formImgs);
         const formCate = document.querySelector("#my-select");
         const formDate = document.querySelector(".form-date");
+        const formAuthor = document.getElementById("form-author");
         const dsc = document.querySelector(".dsc");
         form.addEventListener("submit", async (e) => {
             e.preventDefault();
@@ -37,11 +39,13 @@ const projectEdit = ({ id }) => {
                 const newProject = {
                     id,
                     name: formName.value,
-                    url: formUrl.value,
+                    url: formUrlSource.value,
+                    urlWeb: formUrlWebsite.value,
                     galleryProjects: urls_Projects.length > 0 ? urls_Projects : projects.galleryProjects,
                     gallery: urls.length > 0 ? urls : projects.gallery,
-                    categoryId: formCate.value,
+                    categoryId: parseInt(formCate.value),
                     date: formDate.value,
+                    author: formAuthor.value,
                     description: dsc.value
                 }
                 await editProjects(newProject);
@@ -79,31 +83,41 @@ const projectEdit = ({ id }) => {
     }
     return `
     <form class="form-group container"> 
-        <label for="form-name"><h1>EDIT PROJECT</h1></label>
-        <div style="color:#fff;">Name:</div>   
-        <input type="text" class="form-control" id="form-name" value="${projects.name}"> 
-        <div style="color:#fff;">Url:</div>   
-        <input type="url" class="form-control" id="form-url" value="${projects.url}"> 
-        <div style="color:#fff;">Image:</div>   
-        <input type="file" class="form-img"/>
-        <img src="${projects.gallery && `${projects.gallery}`}" alt="preview"  width="150px" height="150px"/>
-        <div style="color:#fff;">Gallery project:</div>   
-        <input type="file" class="form-imgs" multiple>
-        <div class="gallery" style="display:flex">
-        ${projects.galleryProjects && projects.galleryProjects.map((item) =>
-        `<img src="${item}" height="75px" width="75px"></img>`
+        <label for="form-name"><h1 style="color:var(--color-main);text-align:center;width="100%"">EDIT PROJECT</h1></label>
+        <div class="row">
+        <div class="col-lg-6">
+            <div style="color:#fff;">Name:</div>   
+            <input type="text" class="form-control" id="form-name" value="${projects.name ? projects.name : ''}"> 
+            <div style="color:#fff;">Url Source:</div>   
+            <input type="url" class="form-control" id="form-url-source" value="${projects.url ? projects.url : ''}"> 
+            <div style="color:#fff;">Url Website:</div>   
+            <input type="url" class="form-control" id="form-url-website" value="${projects.urlWeb ? projects.urlWeb : ''}"> 
+            <div style="color:#fff;">Image:</div>   
+            <input type="file" class="form-img"/>
+            <img src="${projects.gallery && `${projects.gallery}`}" alt="preview"  width="150px" height="150px"/>
+            <div style="color:#fff;">Gallery project:</div>   
+            <input type="file" class="form-imgs" multiple>
+            <div class="gallery" style="display:flex">
+            ${projects.galleryProjects && projects.galleryProjects.map((item) =>
+        `<img src="${item ? item : ''}" height="75px" width="75px"></img>`
     )}
+            </div>
         </div>
-        <div style="color:#fff;">The loai:</div>   
-        <select id="my-select" class="form-control" name="" value="${projects.categoryId}">
-        ${categories.map((item) => `
-            <option value="${item.id}" ${item.id == projects.categoryId ? 'selected' : ''}>${item.name}</option>
-        `)}
-        </select>
-        <div style="color:#fff;">Ngay tao:</div>   
-        <input type="date" class="form-date" value="${projects.date}">
+        <div class="col-lg-6">
+            <div style="color:#fff;">The loai:</div>   
+            <select id="my-select" class="form-control" name="" value="${projects.categoryId}">
+            ${categories.map((item) => `
+                <option value="${Number(item.id)}" ${item.id == projects.categoryId ? 'selected' : ''}>${item.name}</option>
+            `)}
+            </select>
+            <div style="color:#fff;">Ngay tao:</div>   
+            <input type="date" class="form-date" value="${projects.date ? projects.date : ''}">
+            <div style="color:#fff;">Tác giả:</div>   
+            <input type="text" id="form-author" class="form-control" value="${projects.author ? projects.author : ''}">
+        </div>
+        </div>
         <div style="color:#fff;">mo ta:</div>   
-        <textarea name="" id="dsc" cols="30" rows="10" class="dsc">${projects.description}</textarea>      
+        <textarea name="" id="dsc" cols="30" rows="10" class="dsc">${projects.description ? projects.description : ''}</textarea>      
         <button class="btn btn-success">UPDATE</button>
         </form>
         `

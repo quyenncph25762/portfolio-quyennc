@@ -9,7 +9,7 @@ const header = () => {
   return `
   <header>
   <div class="header_row container">
-  <a class="header_logo col-lg-3">QUIN</a>
+  <a href="/#project" class="header_logo col-lg-3">QUIN</a>
   ${nav()}
   </div>
   </header>

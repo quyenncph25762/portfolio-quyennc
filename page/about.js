@@ -6,7 +6,7 @@ const about = () => {
       <div class="row">
         <div class="col-lg-5">
           <div class="about_img">
-            <img src="https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/298495062_1560014281120870_8909407275473317925_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=OH9ZyMkkgZ8AX-X7Cjv&_nc_ht=scontent.fhan5-8.fna&oh=00_AfDnlx49a5H0a_Q0tokYO1wMMDVC17RcYimKB-Va3SKCTg&oe=63EF6F4B" alt=""
+            <img src="https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/298495062_1560014281120870_8909407275473317925_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=GnysOyUYgvQAX9XlUEF&_nc_ht=scontent.fhan5-8.fna&oh=00_AfArv6OIyXp7WjU9WDGeb2tcyM-FLsiDoqrZQrWV0P-uAw&oe=63F7584B" alt=""
               class="about_photo">
           </div>
         </div>
