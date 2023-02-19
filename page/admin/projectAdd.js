@@ -6,30 +6,66 @@ import { addProjects } from "./config/projects";
 const projectAdd = () => {
     const [category, setCategory] = useState([])
     useEffect(() => {
-        getCategories().then(({ data }) => setCategory(data))
+        getCategories().then(({ data }) => setCategory(data));
     }, [])
     useEffect(() => {
         const form = document.querySelector(".form-group");
         const formName = document.querySelector("#form-name");
+        const formImg = document.querySelector(".form-img");
         const formCate = document.querySelector("#my-select");
         const formDate = document.querySelector(".form-date");
         const dsc = document.querySelector(".dsc");
-        form.addEventListener("submit", (e) => {
+        form.addEventListener("submit", async (e) => {
             e.preventDefault();
-            const newProject = {
-                name: formName.value,
-                categoryId: formCate.value,
-                date: formDate.value,
-                description: dsc.value,
+            try {
+                const urls = await uploadFiles(formImg.files)
+                const newProject = {
+                    name: formName.value,
+                    gallery: urls,
+                    categoryId: parseInt(formCate.value),
+                    date: formDate.value,
+                    description: dsc.value,
+                }
+                addProjects(newProject).then(() => {
+                    router.navigate("/admin/projectAdmin")
+                })
+            } catch (error) {
+                console.error(error);
             }
-            addProjects(newProject).then(() => router.navigate("/admin/projectAdmin"))
         })
     })
+    const uploadFiles = async (files) => {
+        if (files) {
+            const cloud_Name = "doorujhxj";
+            const preset_Name = "Project_Gallery";
+            const folder_Name = "ASS_ECMA";
+            const urls = [];
+            const api = ` https://api.cloudinary.com/v1_1/${cloud_Name}/image/upload`;
+
+            const formData = new FormData(); //key: value
+            formData.append("upload_preset", preset_Name);
+            formData.append("folder", folder_Name);
+
+            for (const file of files) {
+                formData.append("file", file);
+
+                const response = await axios.post(api, formData, {
+                    headers: {
+                        "Content-Type": "multipart/form-data"
+                    }
+                });
+                urls.push(response.data.secure_url);
+            }
+            return urls;
+        }
+    }
     return `
     <form class="form-group container">
         <label for="form-name"><h1>ADD PROJECT</h1></label>
         <div style="color:#fff;">Name:</div>   
         <input type="text" class="form-control" id="form-name">
+        <div style="color:#fff;">Image:</div>   
+        <input type="file" class="form-img" multiple>
         <div style="color:#fff;">The loai:</div>   
         <div class="btn-group-toggle" data-toggle="buttons">
         <select id="my-select" class="form-control" name="">

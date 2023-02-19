@@ -10,18 +10,24 @@ const projectAdmin = () => {
   useEffect(() => {
     const btns = document.querySelectorAll(".btn-danger");
     for (const btn of btns) {
-      btn.addEventListener("click", () => {
+      btn.addEventListener("click", async () => {
         const id = btn.dataset.id;
-        deleteProjects(id).then(() => { const newProject = projects.filter((project) => project.id != id); setProjects(newProject) })
+        try {
+          deleteProjects(id).then(() => { const newProject = projects.filter((project) => project.id != id); setProjects(newProject) })
+        } catch (error) {
+          console.error(error);
+        }
       })
     }
   })
   return `
+  <a href="/admin/Categories">Categories</a>
     <table class="table table-light container" style="box-shadow: 0 0 10px #ccc;border-radius:10px;overflow:hidden">
       <thead class="thead-light">
         <tr>
           <th>#</th>
           <th>Name</th>
+          <th>Image</th>
           <th>category</th>
           <th>Date</th>
           <th>description</th>
@@ -33,6 +39,7 @@ const projectAdmin = () => {
         <tr>
             <td>${index + 1}</td>
             <td>${project.name}</td>
+            <td><img src="${project.gallery}" height="75px" style="border:1px solid #ccc;" width="75px"></td>
             <td>${project.categoryId}</td>
             <td>${project.date}</td>
             <td>${project.description}</td>

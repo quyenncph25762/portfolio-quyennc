@@ -1,33 +1,33 @@
 const ProjectContent = ({ projectInCategory, projects, categories }) => {
-    return `
+  return `
     ${projectInCategory.projects ? `
       ${projectInCategory.projects.map((project) => `
       <div class="cart">
-        <div class="cart_img">
-          <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/09/how-to-design-a-website-21-1024x500.png" alt="" class="cart_photo">
-        </div>
-        <div class="cart_nav">
-          <h1 class="cart_nav-title">${project.name}<span>${project.date}</span></h1>
-          <div class="cart_nav-languagues">
-          ${categories.map((category) => `
-            ${project.categoryId == category.id ? `<span>${category.name}</span>` : ''}
-          `).join("")}
+          <div class="cart_img">
+            <img src="${project.gallery}" alt="" class="cart_photo">
           </div>
-          <div class="cart_nav-dsc">${project.description}</div>
-          <div class="cart_nav-button">
-            <button class="cart_btn"><a class="cart_nav-btn">Visit source</a></button>
-            <button class="cart_btn"><a class="cart_nav-btn">Visit website</a></button>
+          <div class="cart_nav">
+            <h1 class="cart_nav-title">${project.name}<span>${project.date}</span></h1>
+            <div class="cart_nav-languagues">
+            ${categories.map((category) => `
+              ${project.categoryId == category.id ? `<span>${category.name}</span>` : ''}
+            `).join("")}
+            </div>
+            <div class="cart_nav-dsc">${project.description}</div>
+            <div class="cart_nav-button">
+              <button class="cart_btn"><a class="cart_nav-btn">Visit source</a></button>
+              <button class="cart_btn"><a class="cart_nav-btn">Visit website</a></button>
+            </div>
           </div>
-        </div>
       </div>
       `).join("")}
       `
-            // Thì
-            : `
+      // Thì
+      : `
       ${projects.map((project) => `
       <div class="cart">
         <div class="cart_img">
-          <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/09/how-to-design-a-website-21-1024x500.png" alt="" class="cart_photo">
+          <img src="${project.gallery}" alt="" class="cart_photo">
         </div>
         <div class="cart_nav">
           <h1 class="cart_nav-title">${project.name}<span>${project.date}</span></h1>

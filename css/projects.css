@@ -71,6 +71,8 @@
     font-size: 24px;
 }
 
+
+
 .cart {
     width: calc(calc(100%/var(--column)) - var(--spacing));
     min-height: 550px;
@@ -83,6 +85,7 @@
     transition: .25s linear;
     margin-top: var(--spacing);
     animation: cart .5s ease-in-out;
+    /* text-decoration: none; */
 }
 
 @keyframes cart {
@@ -135,6 +138,7 @@
     text-align: center;
     padding: 10px 0;
     flex-shrink: 0;
+    text-decoration: none;
 }
 
 .cart_nav-title span {

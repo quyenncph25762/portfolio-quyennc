@@ -1,6 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import { router, render } from "./lib"
 import about from "./page/about";
+import Categories from "./page/admin/Categories";
+import CategoriesAdd from "./page/admin/CategoriesAdd";
+import CategoriesEdit from "./page/admin/CategoriesEdit";
 import projectAdd from "./page/admin/projectAdd";
 import projectAdmin from "./page/admin/projectAdmin";
 import projectEdit from "./page/admin/projectEdit";
@@ -26,5 +29,8 @@ router.on("/project/:id", ({ data }) => render(() => projectDetail(data), app))
 router.on("/admin/projectAdmin", () => render(projectAdmin, app))
 router.on("/admin/projectAdmin/add", () => render(projectAdd, app))
 router.on("/admin/projectAdmin/:id/edit", ({ data }) => render(() => projectEdit(data), app))
+router.on("/admin/Categories", () => render(Categories, app))
+router.on("/admin/Categories/add", () => render(CategoriesAdd, app))
+router.on("/admin/Categories/:id/edit", ({ data }) => render(() => CategoriesEdit(data), app))
 router.notFound(() => render(notFound, app));
 router.resolve();

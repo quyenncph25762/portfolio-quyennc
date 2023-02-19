@@ -2,56 +2,81 @@
   "projects": [
     {
       "name": "Dự án mẫu",
-      "categoryId": "3",
-      "date": "2022-12-11",
-      "description": "Nhóm 3 người làm được thực hiện bởi sinh viên FPOLY",
+      "gallery": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676780305/ASS_ECMA/vfrvesbyzmefyf0iewh5.jpg"
+      ],
+      "categoryId": 3,
+      "date": "2020-02-06",
+      "description": "Làm bằng PHP",
       "id": 1
     },
     {
       "name": "Dự án 1",
-      "categoryId": "3",
-      "date": "2023-09-01",
-      "description": "Nhóm 5 người được thực hiện bởi sinh viên FPOLY",
+      "gallery": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676780337/ASS_ECMA/kpm2cnitpvbqhzv7tmtd.jpg"
+      ],
+      "categoryId": 4,
+      "date": "2009-12-22",
+      "description": "Dự án 1 học thầy Tú",
       "id": 2
     },
     {
-      "name": "the zed",
-      "categoryId": "4",
-      "date": "2023-12-02",
-      "description": "Code thuần JS",
+      "name": "Dự án tốt nghiệp",
+      "gallery": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676780377/ASS_ECMA/svbrjskzfdb3okqewqju.jpg"
+      ],
+      "categoryId": 4,
+      "date": "2024-10-10",
+      "description": "Dự án tốt nghiệp",
       "id": 3
     },
     {
-      "name": "The band",
-      "categoryId": "1",
-      "date": "2023-01-10",
-      "description": "Code cua f8",
-      "id": 4
+      "id": 4,
+      "name": "Thực tập tốt nghiệp",
+      "gallery": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676780420/ASS_ECMA/wzges2fzrs32onr62b5m.jpg"
+      ],
+      "categoryId": 1,
+      "date": "2222-11-12",
+      "description": "Code thuần HTML "
     },
     {
-      "name": "Dự án tốt nghiệp",
-      "categoryId": "4",
-      "date": "2023-10-11",
-      "description": "Thực tập tốt nghiệp",
+      "name": "Dự án ECMA",
+      "gallery": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676780453/ASS_ECMA/uzfmm0sglkv3w3iabpad.png"
+      ],
+      "categoryId": 2,
+      "date": "2023-01-01",
+      "description": "Code thuần CSS",
       "id": 5
+    },
+    {
+      "id": 6,
+      "name": "Tôi tốt nghiệp c3 rồi nhé b",
+      "gallery": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676781329/ASS_ECMA/mhecr77yham87hpd5qu8.jpg"
+      ],
+      "categoryId": "2",
+      "date": "2233-10-20",
+      "description": "CSS thuần"
     }
   ],
   "categories": [
     {
-      "id": "1",
+      "id": 1,
       "name": "HTML"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "CSS"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "PHP"
     },
     {
-      "id": "4",
-      "name": "JavaScript"
+      "name": "JavaScipt",
+      "id": 4
     }
   ]
 }
