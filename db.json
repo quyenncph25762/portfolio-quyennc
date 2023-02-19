@@ -1,64 +1,21 @@
 {
   "projects": [
     {
-      "name": "Dự án mẫu",
-      "gallery": [
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676780305/ASS_ECMA/vfrvesbyzmefyf0iewh5.jpg"
+      "id": 1,
+      "name": "The zed ",
+      "url": "https://thezed.vn/",
+      "galleryProjects": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676790842/ASS_ECMA/gvatgnszxeradp5dsuj4.jpg",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676790842/ASS_ECMA/uocqwjyyxo1lvm9htxke.jpg",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676790843/ASS_ECMA/vj09vxgao0umrqz5ipwt.jpg",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676790843/ASS_ECMA/o5ixablbrvx00sfdqthx.jpg"
       ],
-      "categoryId": 3,
-      "date": "2020-02-06",
-      "description": "Làm bằng PHP",
-      "id": 1
-    },
-    {
-      "name": "Dự án 1",
       "gallery": [
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676780337/ASS_ECMA/kpm2cnitpvbqhzv7tmtd.jpg"
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676788377/ASS_ECMA/lbtash2mdce8xfxqtbnf.jpg"
       ],
-      "categoryId": 4,
-      "date": "2009-12-22",
-      "description": "Dự án 1 học thầy Tú",
-      "id": 2
-    },
-    {
-      "name": "Dự án tốt nghiệp",
-      "gallery": [
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676780377/ASS_ECMA/svbrjskzfdb3okqewqju.jpg"
-      ],
-      "categoryId": 4,
-      "date": "2024-10-10",
-      "description": "Dự án tốt nghiệp",
-      "id": 3
-    },
-    {
-      "id": 4,
-      "name": "Thực tập tốt nghiệp",
-      "gallery": [
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676780420/ASS_ECMA/wzges2fzrs32onr62b5m.jpg"
-      ],
-      "categoryId": 1,
-      "date": "2222-11-12",
-      "description": "Code thuần HTML "
-    },
-    {
-      "name": "Dự án ECMA",
-      "gallery": [
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676780453/ASS_ECMA/uzfmm0sglkv3w3iabpad.png"
-      ],
-      "categoryId": 2,
-      "date": "2023-01-01",
-      "description": "Code thuần CSS",
-      "id": 5
-    },
-    {
-      "id": 6,
-      "name": "Tôi tốt nghiệp c3 rồi nhé b",
-      "gallery": [
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676781329/ASS_ECMA/mhecr77yham87hpd5qu8.jpg"
-      ],
-      "categoryId": "2",
-      "date": "2233-10-20",
-      "description": "CSS thuần"
+      "categoryId": "3",
+      "date": "2032-12-10",
+      "description": "The zed vn"
     }
   ],
   "categories": [

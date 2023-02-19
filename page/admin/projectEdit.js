@@ -15,7 +15,11 @@ const projectEdit = ({ id }) => {
     useEffect(() => {
         const form = document.querySelector(".form-group");
         const formName = document.querySelector("#form-name");
+        const formUrl = document.querySelector("#form-url");
+        // console.log(formUrl);
         const formImg = document.querySelector(".form-img");
+        const formImgs = document.querySelector(".form-imgs");
+        // console.log(formImgs);
         const formCate = document.querySelector("#my-select");
         const formDate = document.querySelector(".form-date");
         const dsc = document.querySelector(".dsc");
@@ -28,8 +32,20 @@ const projectEdit = ({ id }) => {
                 //     formData.append("file", file);
                 // }
                 const urls = await uploadFiles(formImg.files)
-                const newProject = { id, name: formName.value, gallery: urls.length > 0 ? urls : projects.gallery, categoryId: formCate.value, date: formDate.value, description: dsc.value }
-                await editProjects(newProject).then(() => router.navigate("/admin/projectAdmin"))
+                const urls_Projects = await uploadFiles(formImgs.files)
+                // console.log(urls_Projects);
+                const newProject = {
+                    id,
+                    name: formName.value,
+                    url: formUrl.value,
+                    galleryProjects: urls_Projects.length > 0 ? urls_Projects : projects.galleryProjects,
+                    gallery: urls.length > 0 ? urls : projects.gallery,
+                    categoryId: formCate.value,
+                    date: formDate.value,
+                    description: dsc.value
+                }
+                await editProjects(newProject);
+                router.navigate("/admin/projectAdmin")
             } catch (error) {
                 console.error(error);
             }
@@ -63,12 +79,21 @@ const projectEdit = ({ id }) => {
     }
     return `
     <form class="form-group container"> 
-        <label for="form-name"><h1>ADD PROJECT</h1></label>
+        <label for="form-name"><h1>EDIT PROJECT</h1></label>
         <div style="color:#fff;">Name:</div>   
         <input type="text" class="form-control" id="form-name" value="${projects.name}"> 
+        <div style="color:#fff;">Url:</div>   
+        <input type="url" class="form-control" id="form-url" value="${projects.url}"> 
         <div style="color:#fff;">Image:</div>   
         <input type="file" class="form-img"/>
         <img src="${projects.gallery && `${projects.gallery}`}" alt="preview"  width="150px" height="150px"/>
+        <div style="color:#fff;">Gallery project:</div>   
+        <input type="file" class="form-imgs" multiple>
+        <div class="gallery" style="display:flex">
+        ${projects.galleryProjects && projects.galleryProjects.map((item) =>
+        `<img src="${item}" height="75px" width="75px"></img>`
+    )}
+        </div>
         <div style="color:#fff;">The loai:</div>   
         <select id="my-select" class="form-control" name="" value="${projects.categoryId}">
         ${categories.map((item) => `

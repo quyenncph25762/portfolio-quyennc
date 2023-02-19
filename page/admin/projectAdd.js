@@ -11,7 +11,9 @@ const projectAdd = () => {
     useEffect(() => {
         const form = document.querySelector(".form-group");
         const formName = document.querySelector("#form-name");
+        const formUrl = document.querySelector("#form-url");
         const formImg = document.querySelector(".form-img");
+        const formImgs = document.querySelector(".form-imgs");
         const formCate = document.querySelector("#my-select");
         const formDate = document.querySelector(".form-date");
         const dsc = document.querySelector(".dsc");
@@ -19,9 +21,12 @@ const projectAdd = () => {
             e.preventDefault();
             try {
                 const urls = await uploadFiles(formImg.files)
+                const urls_Gallery = await uploadFiles(formImgs.files)
                 const newProject = {
                     name: formName.value,
+                    url: formUrl.value,
                     gallery: urls,
+                    galleryProjects: urls_Gallery,
                     categoryId: parseInt(formCate.value),
                     date: formDate.value,
                     description: dsc.value,
@@ -64,8 +69,14 @@ const projectAdd = () => {
         <label for="form-name"><h1>ADD PROJECT</h1></label>
         <div style="color:#fff;">Name:</div>   
         <input type="text" class="form-control" id="form-name">
+        <div style="color:#fff;">Url:</div>   
+        <input type="url" class="form-control" id="form-url" placeholder="https://example.com"
+        pattern="https://.*" size="30"
+        required>
         <div style="color:#fff;">Image:</div>   
-        <input type="file" class="form-img" multiple>
+        <input type="file" class="form-img">
+        <div style="color:#fff;">Gallery project:</div>   
+        <input type="file" class="form-imgs" multiple>
         <div style="color:#fff;">The loai:</div>   
         <div class="btn-group-toggle" data-toggle="buttons">
         <select id="my-select" class="form-control" name="">
