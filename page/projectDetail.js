@@ -10,10 +10,11 @@ const projectDetail = ({ id }) => {
     getProject(id).then(({ data }) => setProjects(data));
   }, [])
   useEffect(() => {
-    fetch(`http://localhost:3000/categories/${id}?_embed=projects`)
+    fetch(`http://localhost:3000/categories`)
       .then((response) => response.json())
       .then((data) => setCategories(data))
   }, [])
+  // console.log(categories);
   return `
   ${header()}
   <div id="project_detail">
@@ -24,7 +25,12 @@ const projectDetail = ({ id }) => {
         <h1 class="project_detail_title">${projects.name ? projects.name : 'Đang cập nhật ...'}</h1>
         <span class="project_detail_post__date">${projects.date ? projects.date : '?? ?? ????'}</span>
         <p class="acthor">Designed and made by: <span>${projects.author ? projects.author : 'Hiện không rõ'}</span></p>
-          <p>Ngôn ngữ sử dụng: <span style="font-weight:700;">${categories.name ? categories.name : 'Đang cập nhật...'}</span></p>
+        <p>Ngôn ngữ sử dụng: 
+        ${categories.map((item) => `
+        <span style="font-weight:700;">${item.id == projects.categoryId ? item.name : ''}</span>
+        `).join("")}
+        
+        </p>
         </div>
       </div>
       <main class="content_projectdetail">

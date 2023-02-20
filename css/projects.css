@@ -175,6 +175,17 @@
     -webkit-line-clamp: 2;
 }
 
+td p {
+    display: -webkit-box;
+    font-size: 12px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    /* height: 50px; */
+    width: 150px;
+}
+
 .cart_nav-button {
     width: 100%;
     display: flex;

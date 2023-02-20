@@ -22,6 +22,8 @@ const projectAdmin = () => {
   })
   return `
   <a href="/admin/Categories">Categories</a>
+  <a href="/admin/portAdmin">Portfolio</a>
+  <a href="/admin/aboutAdmin">About</a>
     <table class="table table-light container" style="box-shadow: 0 0 10px #ccc;border-radius:10px;overflow:hidden">
       <thead class="thead-light">
         <tr>
@@ -48,7 +50,7 @@ const projectAdmin = () => {
             <td width="75px"><button class="btn btn-danger" data-id="${project.id}">remove</button></td>
             <td width="75px"><button class="btn btn-warning"><a href="/admin/projectAdmin/${project.id}/edit">EDIT</a></button></td>
         </tr>
-      `)
+      `).join("")
     }
       </tbody >
     </table >

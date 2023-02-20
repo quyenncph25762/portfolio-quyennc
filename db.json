@@ -1,23 +1,6 @@
 {
   "projects": [
     {
-      "id": 1,
-      "name": "The zed",
-      "url": "https://github.com/quyenncph25762/duan1.git",
-      "urlWeb": "https://thezed.vn/",
-      "galleryProjects": [
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676803892/ASS_ECMA/g5sdfn01rxn93ayzrk0a.jpg",
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676803893/ASS_ECMA/gtmssxzmht2libru9lbu.webp"
-      ],
-      "gallery": [
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676803892/ASS_ECMA/pefuhaogipnkudxzh7lp.jpg"
-      ],
-      "categoryId": 3,
-      "date": "2003-10-16",
-      "author": "quyennc",
-      "description": "Javascript"
-    },
-    {
       "id": 2,
       "name": "The band",
       "url": "https://www.w3schools.com/w3css/tryw3css_templates_band.htm",
@@ -35,34 +18,21 @@
       "description": "The band la nhom nhạc của tôi biểu diễn trên thế giới"
     },
     {
-      "name": "Quyen dep trai nhat vu tru",
-      "url": "https://www.facebook.com/quyen.nguyencong.1610203",
-      "gallery": [
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676804146/ASS_ECMA/avdsv6hziwq7ci4ofnei.jpg"
-      ],
-      "galleryProjects": [
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676804147/ASS_ECMA/k07nuq9zg98nakhjycr7.jpg",
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676804148/ASS_ECMA/b3vug8imrd1hepi3lsuy.jpg"
-      ],
-      "categoryId": 2,
-      "date": "2003-10-16",
-      "description": "Đây là ảnh của người làm ra ass ECMA này",
-      "id": 3
-    },
-    {
+      "id": 4,
       "name": "Halloween",
       "url": "https://en.wikipedia.org/wiki/Halloween",
-      "gallery": [
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676804332/ASS_ECMA/pmb0yt9ykuommn9tffeq.webp"
-      ],
+      "urlWeb": "",
       "galleryProjects": [
         "https://res.cloudinary.com/doorujhxj/image/upload/v1676804333/ASS_ECMA/isc3uw1ewgcybpheqhh8.jpg",
         "https://res.cloudinary.com/doorujhxj/image/upload/v1676804334/ASS_ECMA/znl9gqsyikynsfwgn4yq.jpg"
       ],
+      "gallery": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676804332/ASS_ECMA/pmb0yt9ykuommn9tffeq.webp"
+      ],
       "categoryId": 1,
       "date": "2003-10-22",
-      "description": "Halloween đẹp hơn giáng sinh nhiều",
-      "id": 4
+      "author": "Quyen dep trai nhat vu tru",
+      "description": "Halloween đẹp hơn giáng sinh nhiều"
     },
     {
       "id": 5,
@@ -83,21 +53,21 @@
       "description": "Công nghệ AI đang dần bùng nổ , liệu năm 2023 có sự đột phá nào ??"
     },
     {
-      "id": 6,
-      "name": "Shadow garden",
+      "id": 7,
+      "name": "Du an 1",
       "url": "",
-      "urlWeb": "http://animevietsub.pro/phim/kage-no-jitsuryokusha-ni-naritakute-a4699/",
+      "urlWeb": "",
       "galleryProjects": [
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676821419/ASS_ECMA/p6zkhwfcoe3ubnpcz7th.jpg",
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676821420/ASS_ECMA/l4hloz8lysnoumcbnrrz.jpg"
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676832544/ASS_ECMA/kpyb0eguxjeps7vaymqm.jpg",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676832545/ASS_ECMA/sjevhutljuzzooxzakxf.jpg"
       ],
       "gallery": [
-        "https://res.cloudinary.com/doorujhxj/image/upload/v1676821418/ASS_ECMA/mwxabldguzob4idwpfif.jpg"
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676861819/ASS_ECMA/yspcjsouqhmjr6np6ay8.jpg"
       ],
       "categoryId": 3,
-      "date": "2022-10-16",
-      "author": "Nguyen Cong Quyen",
-      "description": "Như bao người ngưỡng mộ những anh hùng khi còn nhỏ, nhân vật chính của chúng ta lại ngưỡng mộ những con người trong bóng tối."
+      "date": "2023-02-02",
+      "author": "quyennc",
+      "description": "Dự án 1 thầy thắng hq"
     }
   ],
   "categories": [
@@ -116,6 +86,34 @@
     {
       "name": "JavaScipt",
       "id": 4
+    }
+  ],
+  "portfolio": [
+    {
+      "myName": "Nguyễn Công Quyền",
+      "myJob": "Web Developer",
+      "portImg": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676887484/Portfolio_ECMA/mfdwdrgfeikdnnkqiqhb.png"
+      ],
+      "urlCv": "https://www.facebook.com/quyen.nguyencong.1610203",
+      "info": "Tôi là Quyền dev giỏi nhất thế giới",
+      "id": 1
+    }
+  ],
+  "about": [
+    {
+      "aboutTitle": "My about",
+      "aboutImg": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676890656/about_ECMA/z9mjy5vuj2rfyudvmrfk.png"
+      ],
+      "aboutFirstDsc": "Mình tên là Nguyễn Công Quyền hiện tại là kì 5 block 1 tại Trường Fpt Polytechnic , mình đã theo đuổi môn Lập trình web từ hồi lớp 12 , Mình đã học qua ytb , tiktok , ....",
+      "aboutSecondDsc": "Ngoài ra , mình là con người ham học hỏi và hiếu kì . Mình luôn tìm tòi cái mới để phát triển bản thân hơn",
+      "aboutInter": "Những sở thích của tôi",
+      "aboutTag": [
+        "Basketball,football,swimming"
+      ],
+      "formIcons": "*",
+      "id": 2
     }
   ]
 }
