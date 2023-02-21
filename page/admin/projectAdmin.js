@@ -24,6 +24,8 @@ const projectAdmin = () => {
   <a href="/admin/Categories">Categories</a>
   <a href="/admin/portAdmin">Portfolio</a>
   <a href="/admin/aboutAdmin">About</a>
+  <a href="/admin/skill">Skills</a>
+  <a href="/admin/contactAdmin">Contact</a>
     <table class="table table-light container" style="box-shadow: 0 0 10px #ccc;border-radius:10px;overflow:hidden">
       <thead class="thead-light">
         <tr>

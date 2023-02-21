@@ -115,5 +115,49 @@
       "formIcons": "*",
       "id": 2
     }
+  ],
+  "skill": [
+    {
+      "skillTitle": "Skills",
+      "skillImg": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676950880/skill_ECMA/krp3wk8r15aqrssoptuc.png",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676950880/skill_ECMA/hycpzfr9mii483ux5chw.png",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676950881/skill_ECMA/enocpcengsohckfokadz.png",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676950882/skill_ECMA/vifqzecr6xykynhene25.png",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676950882/skill_ECMA/pulthogphtdmzce4tsxt.png",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676950883/skill_ECMA/ajzewvwtesm7iic8pcst.png",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676950883/skill_ECMA/j1cm2onimbmpemnwb2kb.png"
+      ],
+      "id": 1
+    }
+  ],
+  "contact": [
+    {
+      "contactName": "Instagram",
+      "contactInfo": "https://www.instagram.com/congquyen_1603/",
+      "contactUrl": "https://www.instagram.com/congquyen_1603/",
+      "contactImg": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676955296/contact_ECMA/gqwcg2r1ugnj9ip7j3gl.png"
+      ],
+      "id": 7
+    },
+    {
+      "contactName": "Facebook",
+      "contactInfo": "https://www.facebook.com/quyen.nguyencong.1610203",
+      "contactUrl": "https://www.facebook.com/quyen.nguyencong.1610203",
+      "contactImg": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676955495/contact_ECMA/vuvdqt5wmig0vjxhb9ny.png"
+      ],
+      "id": 8
+    },
+    {
+      "contactName": "Location",
+      "contactInfo": "Từ Sơn , Bắc Ninh",
+      "contactUrl": "",
+      "contactImg": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1676954512/contact_ECMA/nhifc7ug7yhrcwsjla39.png"
+      ],
+      "id": 9
+    }
   ]
 }

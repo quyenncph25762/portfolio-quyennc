@@ -4,15 +4,27 @@ import about from "./page/about";
 import aboutAdd from "./page/admin/About/aboutAdd";
 import aboutAdmin from "./page/admin/About/aboutAdmin";
 import aboutEdit from "./page/admin/About/aboutEdit";
+
 import Categories from "./page/admin/Categories";
 import CategoriesAdd from "./page/admin/CategoriesAdd";
 import CategoriesEdit from "./page/admin/CategoriesEdit";
+import ContactAdd from "./page/admin/contact/ContactAdd";
+
+import ContactAdmin from "./page/admin/contact/ContactAdmin";
+import ContactEdit from "./page/admin/contact/ContactEdit";
+
 import PortAdd from "./page/admin/Portfiolio/PortAdd";
 import PortAdmin from "./page/admin/Portfiolio/PortAdmin";
 import PortEdit from "./page/admin/Portfiolio/PortEdit";
+
 import projectAdd from "./page/admin/projectAdd";
 import projectAdmin from "./page/admin/projectAdmin";
 import projectEdit from "./page/admin/projectEdit";
+
+import skillAdd from "./page/admin/skills/skillAdd";
+import skillEdit from "./page/admin/skills/skillEdit";
+import skillAdmin from "./page/admin/skills/skills";
+
 import contact from "./page/contact";
 import footer from "./page/footer";
 import home from "./page/home"
@@ -49,5 +61,14 @@ router.on("/admin/portAdmin/:id/edit", ({ data }) => render(() => PortEdit(data)
 router.on("/admin/aboutAdmin", () => render(aboutAdmin, app));
 router.on("/admin/aboutAdmin/add", () => render(aboutAdd, app));
 router.on("/admin/aboutAdmin/:id/edit", ({ data }) => render(() => aboutEdit(data), app));
+// Skills 
+router.on("/admin/skill", () => render(skillAdmin, app));
+router.on("/admin/skill/add", () => render(skillAdd, app));
+router.on("/admin/skill/:id/edit", ({ data }) => render(() => skillEdit(data), app));
+// Contact 
+router.on("/admin/contactAdmin", () => render(ContactAdmin, app));
+router.on("/admin/contactAdmin/add", () => render(ContactAdd, app));
+router.on("/admin/contactAdmin/:id/edit", ({ data }) => render(() => ContactEdit(data), app));
+
 router.notFound(() => render(notFound, app));
 router.resolve();

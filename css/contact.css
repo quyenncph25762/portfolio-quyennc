@@ -41,6 +41,7 @@
     text-decoration: none;
     color: var(--color-main);
     cursor: pointer;
+    overflow: hidden;
 }
 
 .contact_container_box:hover {
@@ -51,6 +52,7 @@
 .contact_container_box-icon {
     width: 80px;
     height: 80px;
+    flex-shrink: 0;
 }
 
 .img_icon-contact {
@@ -62,6 +64,7 @@
 .contact_container_box-nav {
     word-wrap: break-word;
     margin-left: 10px;
+    flex: 1;
 }
 
 .contact_container_box-nav .contact_container_box-nav-title {
