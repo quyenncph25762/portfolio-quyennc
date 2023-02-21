@@ -68,6 +68,23 @@
       "date": "2023-02-02",
       "author": "quyennc",
       "description": "Dự án 1 thầy thắng hq"
+    },
+    {
+      "name": "Hades",
+      "url": "",
+      "urlWeb": "https://hades.vn/",
+      "gallery": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1677000812/ASS_ECMA/zthvbtqjvuizzd8bhs74.jpg"
+      ],
+      "galleryProjects": [
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1677000813/ASS_ECMA/pz53ffhphaxhth4vv9lk.webp",
+        "https://res.cloudinary.com/doorujhxj/image/upload/v1677000814/ASS_ECMA/g4dp5trckkbxrkxfo55p.webp"
+      ],
+      "categoryId": 4,
+      "date": "2023-02-22",
+      "author": "quyen dep trai",
+      "description": "Shop bán quần áo cho giới trẻ và rất thu hút khách hàng trong ngày nay",
+      "id": 8
     }
   ],
   "categories": [

@@ -64,7 +64,7 @@ const ContactEdit = ({ id }) => {
         <div style="color:#fff;">contact Url:</div>   
         <input type="url" class="form-control" id="formUrl" value="${contacts.contactUrl ? contacts.contactUrl : ''}">
         <br>
-        <button style="display:block;" class="btn btn-success">ADD</button>
+        <button style="display:block;" class="btn btn-warning">UPDATE</button>
     </form>
     `
 }
