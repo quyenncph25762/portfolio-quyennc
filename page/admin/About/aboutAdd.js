@@ -19,7 +19,7 @@ const aboutAdd = () => {
                 aboutImg: urls,
                 aboutFirstDsc: formDsc1.value,
                 aboutSecondDsc: formDsc2.value,
-                aboutInter: formInters.value,
+                aboutInter: formInters,
                 aboutTag: formTags.value,
                 formIcons: formIcons.value,
             }
